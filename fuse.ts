@@ -9,7 +9,7 @@ class Context {
       webIndex: {
         template: "src/index.html"
       },
-      cache : true,
+      cache: true,
       devServer: this.runServer
     });
 }
@@ -31,3 +31,5 @@ task("dist", async ctx => {
   const fuse = ctx.getConfig();
   await fuse.runProd({ uglify: false });
 });
+
+//dev2
